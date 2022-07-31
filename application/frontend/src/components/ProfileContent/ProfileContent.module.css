@@ -1,0 +1,48 @@
+.ProfileContent {
+}
+
+.ProfileContent a {
+    text-decoration: none;
+}
+
+.ImageContainerShelter {
+    display: flex;
+    justify-content: space-between;
+    min-width: 500px;
+}
+
+.ImageContainerBusiness {
+    display: flex;
+    justify-content: space-between;
+    min-width: 500px;
+}
+
+.ImageContainerTwoRows {
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.Reviews {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 800px) {
+    .ImageContainerBusiness {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .Reviews {
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .ProfileContent {
+        min-width: none;
+    }
+}
+

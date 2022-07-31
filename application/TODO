@@ -1,0 +1,17 @@
+Fix Pet Profile relationship -- DONE
+Convert some multi level db queries into transactions (create pet, create account)
+Allow autocomplete of filters for search bar (ie. breeds, business types, etc..)
+test search bar/decide behavior for entities other than businesses
+Add labels to list of search results to match markers
+Customize Google map to not show businesses (or pet businesses if possible)
+Make latitude and longitude restricted to unique in db
+
+Add link to map search in address name display (about_me)
+
+Set up enviornment variables for sensitive frontend code before Deploying!
+
+Change about me max size to something smaller in DB
+
+Make only pets at shelters displayed on map search results
+
+Remove preexisting markers from google map

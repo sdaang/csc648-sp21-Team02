@@ -1,0 +1,50 @@
+.edit-address-header{
+    margin: 60px;
+    font-size: var(--h1);
+    font-family: var(--ff-tertiary);
+}
+
+.edit-address-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.edit-address-submit{
+    margin: 30px auto;
+    background-color: var(--primary-clr);
+    font-size: var(--h3);
+    line-height: 32px;
+    padding:5px 0px;
+    color: white;
+    border: none;
+    border-radius: 7.5px;
+    box-shadow: var(--elevation-1);
+    cursor: pointer;
+    width: 50%;
+}
+
+.combobox-popover{
+    background-color: white;
+    padding: 5px;
+    
+    box-shadow: var(--elevation-1);
+    font-family: var(--ff-primary);
+    border-radius: 7.5px;
+    z-index: 999;
+}
+
+.combobox-list{
+    list-style: none;
+}
+
+.combobox-list li{
+    cursor:pointer;
+    padding: 5px 5px 5px 0px;
+    border-bottom: 1px solid rgba(0,0,0,0.10);
+}
+
+.combobox-popover li:hover{
+    color: var(--primary-clr)
+}

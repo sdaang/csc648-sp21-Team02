@@ -1,0 +1,64 @@
+.ImageContainer {
+    display: block;
+}
+
+.ImageContainer p {
+    float: right;
+}
+
+.ImageStack {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.EmptyDiv {
+    display: block;
+    text-align: center;
+    position: relative;
+    width: 162px;
+    height: 162px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    background-position: center;
+    color: #ccc;
+    cursor:initial;
+    /* box-shadow: var(--elevation-1); */
+}
+
+.EmptyDiv h3 {
+    position: absolute;
+    top: 40px;
+}
+
+.ImageStack_pic{
+    width: 162px;
+    height: 162px;
+    border-radius: 15px;
+    cursor:pointer;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.ImageStack_pic img{
+    transition: transform .25s ease;
+}
+
+
+.ImageStack_pic:hover{
+    z-index: 1;
+    transform: scale(1.1);
+    
+}
+
+.ImageStackText {
+    position: absolute;
+    width: 100%;
+    padding: 5px;
+    color: white;
+    background-color: var(--primary-clr);
+    bottom: 0;
+    align-content: center;
+    border-radius: 0 0 15px 15px;
+}

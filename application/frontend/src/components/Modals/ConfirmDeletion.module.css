@@ -1,0 +1,46 @@
+.delete-pet-header{
+    padding:60px 15px 15px 15px;
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    font-size: var(--h1);
+}
+
+.delete-pet-body{
+    padding: 0 15px 0 15px;
+}
+
+
+.delete-pet-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.delete-pet-cancel-button,
+.delete-pet-confirm-button{
+    margin: 30px 0;
+    font-size: var(--h3);
+    line-height: 32px;
+    padding:0px;
+    border-radius: 7.5px;
+    cursor: pointer;
+    font-family: var(--ff-primary);
+    width: 100px;
+}
+
+.delete-pet-confirm-button{
+    background-color: var(--cancel-delete-exit-color);
+    color: white;
+    border: none;
+    box-shadow: var(--elevation-1);
+}
+
+.delete-pet-confirm-button:hover{
+    font-weight: 600;
+}
+
+.delete-pet-cancel-button{
+    background-color: white;
+    color: var(--primary-clr);
+    border: 1px solid var(--primary-clr);
+}

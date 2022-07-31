@@ -1,0 +1,25 @@
+{
+  "name": "application",
+  "version": "1.0.0",
+  "description": "## Purpose The purpose of this folder is to store all the source code and related files for your team's application. Source code MUST NOT be in any of folder. <strong>YOU HAVE BEEN WARNED</strong>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node ./backend/index.js",
+    "server_dev": "nodemon ./backend/index.js",
+    "client": "cd ./frontend && npm start",
+    "client_build": "cd ./frontend && npm run build",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "deploy": "concurrently \"npm run server\" \"npm run client_build\"",
+    "dev": "concurrently \"npm run server_dev\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.2",
+    "nodemon": "^2.0.7"
+  }
+}

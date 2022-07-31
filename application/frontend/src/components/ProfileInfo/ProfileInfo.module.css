@@ -1,0 +1,271 @@
+.ProfileInfo {
+    display: flex;
+}
+
+
+.UserName {
+    font-weight: 600;
+    font-family: var(--ff-primary);
+    white-space: nowrap;
+}
+
+.UserName input {
+    width: 480px;
+    outline: none;
+    border: solid var(--primary-clr) 2px;
+    border-radius: 10px;
+    text-overflow: ellipsis;
+}
+
+.UserName input:read-only {
+    border: none;
+    outline: none;
+}
+
+.SideContainer {
+    display: flex;
+    margin-left: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ButtonContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 42px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.ButtonContainer a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+
+.DropdownButton {
+    background-color: var(--reversed-txt-clr);
+    border: solid var(--accent-color-2) 2px;
+    width: 170px;
+    height: 100%;
+    margin-right: 30px;
+    color: var(--accent-color-2);
+    border-radius:7px;
+    box-sizing: border-box;
+    /* box-shadow: var(--elevation-1); */
+    outline: none;
+    cursor: pointer;
+}
+
+/* .DropdownButton:hover{
+    border-width: 3px;
+} */
+
+/* .DropdownHidden {
+    display: none;
+} */
+
+/* .DropdownContent {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #ffffff;
+    text-align: center;
+    color: var(--primary-clr);
+    min-width: 170px;
+    box-shadow: var(--elevation-1);
+    z-index: 100;
+    border-radius: 7.5px;
+} */
+
+.DropdownItem {
+    padding-left: 0;
+}
+
+.DropdownItem:hover {
+    color: var(--primary-clr);
+}
+
+.DropdownContent{
+    opacity: 0;
+    width: 200px;
+    padding-left: 20px;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+    margin-top: 0px;
+    list-style: none;
+    border-radius: 7.5px;
+    position:absolute;
+    background-color: white;
+    box-shadow: var(--elevation-1);
+    z-index: 1;
+}
+
+/* .DropdownButton:focus + ul{
+    opacity:1;
+    visibility: visible;
+    transform: translateY(0px);
+} */
+
+.DropdownButton:hover + ul, .UnfollowButton:hover + ul{
+    opacity:1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+.DropdownContent:hover{
+    opacity:1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+.FristButton {
+    background-color: var(--reversed-txt-clr);
+    border: solid var(--primary-clr) 2px;
+    width: 170px;
+    height: 100%;
+    margin-right: 30px;
+    color: var(--primary-clr);
+    border-radius:7px;
+    box-sizing: border-box;
+    /* box-shadow: var(--elevation-1); */
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+
+.Button {
+    background-color: var(--primary-clr);
+    color: var(--reversed-txt-clr);
+    width: 170px;
+    height: 100%;
+    border-radius:7px;
+    box-sizing: border-box;
+    border: none;
+    /* box-shadow: var(--elevation-1); */
+    text-align: center;
+    align-items: center;
+    outline: none;
+    cursor: pointer;
+    transition: .15s ease-in-out;
+}
+
+.Button:hover{
+    opacity: .75;
+}
+
+.EditButton {
+    align-self: center;
+    font-size: 1.5em;
+    height: 50%;
+    outline: none;
+}
+
+.DropdownText {
+    flex-grow: 1;
+}
+
+.UnfollowButton {
+    background-color: #ccc;
+    border: none;
+    width: 170px;
+    height: 100%;
+    margin-right: 30px;
+    color: #545454;
+    border-radius:7px;
+    box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.Image {
+    width: 223px;
+    height: 223px;
+    border-radius: 10px;
+    box-shadow: var(--elevation-2);
+    object-fit: cover;
+}
+
+.ImageStackText {
+    position: absolute;
+    width: 100%;
+    padding: 5px;
+    color: white;
+    bottom: 0px;
+    background-color: var(--primary-clr);
+    align-content: center;
+    border-radius: 0 0 7.5px 7.5px;
+    box-shadow: var(--elevation-1);
+    cursor: pointer;
+}
+
+.ban-button {
+    margin-left: 30px;
+    color: white;
+    background-color: red;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.SideContainer-namvDiv {
+    display: flex;
+    justify-items: center;
+}
+
+.SideContainer-contaniner {
+    display: flex;
+}
+
+@media (max-width: 800px) {
+    .ProfileInfo {
+        flex-direction: column;
+        align-items: center;
+    }
+    .UserName input {
+        text-align: center;
+        width: auto;
+    }
+
+    .SideContainer {
+        align-items: center;
+    }
+
+    .SideContainer-namvDiv {
+        flex-direction: column-reverse;
+    }
+
+    .SideContainer-contaniner {
+        flex-direction: column-reverse;
+    }
+
+    .FristButton {
+        margin-right: 0;
+    }
+
+    .ban-button {
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+
+
+    .ButtonContainer {
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .Button {
+        margin-top: 20px;
+    }
+
+    .UnfollowButton {
+        margin-right: 0;
+    }
+
+    .SideContainer {
+        margin-left: 0;
+    }
+}

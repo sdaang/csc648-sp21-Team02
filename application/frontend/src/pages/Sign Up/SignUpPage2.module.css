@@ -1,0 +1,164 @@
+.signup-container {
+    margin: 200px auto;
+    border-radius: 7.5px;
+    width: 50%;
+    box-shadow: var(--elevation-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-container-header{
+    padding-top: 20px;
+    font-size: var(--h1);
+    font-family: var(--ff-tertiary);
+    text-align: center;
+    font-weight: 600;
+}
+
+.signup-fields-container{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 2;
+    /* grid-template-areas: 'name    phone-num'
+                            'address animals;*/
+    grid-template-rows: 2;
+    gap: 50px;
+    justify-content: center;
+    font-family: var(--ff-primary);
+}
+
+.name-input-container{
+    grid-area: 1/ 1/ span 1;
+}
+
+.phone-number-input-container{
+    grid-area: 1/ 2/ span 1;
+}
+
+.address-input-container{
+    grid-area: 2/ 1/ span 1;
+}
+
+
+.types-input-container{
+    grid-area: 2/ 2/ span 1;
+}
+
+
+.name-input-label, .phone-number-input-label, .address-input-label, .types-input-label {
+    font-family: var(--ff-primary);
+    font-size:var(--h3);
+    display: block;
+}
+
+
+.name-input-container input,
+.phone-number-input-container input,
+.address-input-container input
+{
+    padding: 15px;
+    display: inline-block;
+    border: 1px solid var(--inactive-txt-clr);
+    border-radius: 7.5px;
+}
+
+.checkbox-container{
+    padding: 25px 0 15px 0;
+}
+
+.btn-container {
+    text-align: center;
+    padding: 0 0 30px 0;
+}
+
+.submit-btn{
+    width: 200px;
+    padding:10px 0;
+    text-justify: center;
+    text-align: center;
+    color: white;
+    background-color: var(--primary-clr);
+    font-size: var(--h3);
+    font-family: var(--ff-primary);
+    font-weight: 600;
+
+    box-shadow: var(--elevation-1);
+    border: none;
+    border-radius: 7.5px;
+    
+    cursor: pointer;
+    transition: .15s ease-in-out;
+}
+
+.submit-btn:hover{
+    opacity: .75;
+}
+
+.terms-button,
+.policy-button{
+    border: none;
+    background-color: transparent;
+    color:var(--primary-txt-clr);
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+.combobox-list{
+    background-color: white;
+    padding: 15px;
+    list-style: none;
+    box-shadow: var(--elevation-2);
+    font-family: var(--ff-primary);
+    z-index: 1;
+    border-radius: 7.5px;
+    position: relative;
+}
+
+.combobox-list li{
+    cursor:pointer;
+    padding:5px;
+    border-bottom: 1px solid rgba(0,0,0,0.10);
+}
+
+
+@media only screen and (min-width: 414px) and (max-width: 1024px) {
+    .signup-container-header {
+        font-size: var(--h2);
+        font-weight: bold;
+    }
+    .signup-fields-container {
+        grid-template-areas: 
+            'fname-input-container' 
+            'lname-input-container'
+            'email-input-container' 
+            'username-input-container'
+            'password-input-container' 
+            'confirm-password-input-container';
+        display: flex;
+        flex-direction: column;
+        grid-gap: 0px;
+        gap: 0px;
+    }  
+}
+
+@media only screen and (max-width: 414px){
+    .signup-container-header {
+        font-size: var(--h2);
+        font-weight: bold;
+    }
+    .signup-fields-container {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 0px;
+        gap: 0px;
+        text-align: center;
+    }
+    .signup-fields-container input {
+        width: 90%;   
+    }  
+    .submit-btn {
+        width: 100px; 
+        height: 100px;
+    }
+}

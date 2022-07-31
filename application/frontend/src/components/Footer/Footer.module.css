@@ -1,0 +1,63 @@
+.footer{
+    background-color: var(--primary-txt-clr);
+    height:200px;
+    color: white;
+    display: grid;
+    grid-template-columns: 5;
+    font-family: var(--ff-primary);
+}
+
+.our-team-footer{
+    margin-top: 25px;
+    margin-left: 50px;
+    grid-column: 1 /span 1;
+    font-weight: bold;
+}
+
+.our-team-footer a{
+    text-decoration: none;
+    color: var(--reversed-txt-clr);
+    font-weight: normal;
+}
+
+.nav-link{
+    margin-left: 5px;
+}
+
+.logos {
+    color: white;
+    text-align: center;
+    
+    font-size: 40px;
+    margin: auto;
+}
+
+.terms-conditions {
+    text-align: center;
+    margin: auto;
+}
+
+.fa {
+    
+    font-size: 30px;
+    width: 7%;
+    margin: 10px 5px;
+    border-radius: 50%;
+  }
+
+i {
+    padding-right: 20px;
+}
+
+.terms-button,
+.policy-button{
+    border: none;
+    background-color: transparent;
+    color:var(--reversed-txt-clr);
+    cursor: pointer;
+}
+
+.icons-8-attribution{
+    margin-left: auto;
+    padding:10px;
+}

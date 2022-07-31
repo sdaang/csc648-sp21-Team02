@@ -1,0 +1,90 @@
+.sendAMessage-header {
+  margin-left: 30px;
+  font-weight: 600;
+  font-family: var(--ff-tertiary);
+}
+
+.sendAMessage-subject {
+  width: 100%;
+}
+
+.sendAMessage-body {
+  margin-top: 20px;
+  width: 100%;
+  min-height: 500px;
+  resize: none;
+  border-radius: 7.5px;
+  border: 1px solid var(--inactive-txt-clr);
+  padding: 10px;
+}
+
+.sendAMessage-sendButton {
+  background-color: var(--primary-clr);
+  margin: 20px 0;
+  color: white;
+  padding: 0 25px 0 25px;
+  border: none;
+  border-radius: 7.5px;
+  box-shadow: var(--elevation-1);
+  cursor: pointer;
+  font-family: var(--ff-primary);
+  text-align: center;
+  align-self: flex-end;
+  line-height: 32px;
+  transition: 0.15s ease-in-out;
+}
+
+.sendAMessage-sendButton:hover {
+  opacity: 0.75;
+}
+
+.sendAMessage-sendButton h4 {
+  font-family: var(--ff-primary);
+  font-weight: 600;
+}
+
+.send-a-message-container {
+  display: flex;
+  flex-direction: column;
+  width: 750px;
+  align-items: flex-start;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.sendAMessage-recipient {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.option-recipient-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 7.5px;
+}
+
+.option-recipient-name {
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .send-a-message-container {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 515px) {
+  .send-a-message-container {
+    width: auto;
+    max-height: auto;
+  }
+  .sendAMessage-body {
+    min-height: 200px;
+
+  
+  }
+  .sendAMessage-sendButton {
+    text-align: center;
+  }
+}

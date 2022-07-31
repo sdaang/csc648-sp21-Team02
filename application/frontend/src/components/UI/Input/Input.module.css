@@ -1,0 +1,40 @@
+.Input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.InputElement {
+    border: 1px solid #ccc;
+    background-color: white;
+    font: inherit;
+    padding: 6px 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box; /* calculate the width correctly */
+    padding: 15px;
+    display: inline-block;
+    border: 1px solid;
+    border-color: var(--inactive-txt-clr);
+    border-radius: 5px;
+    background:white;
+}
+
+/* .InputElement:focus {
+    outline: none;
+    background-color: #ccc;
+} */
+
+.Invalid {
+    outline: none;
+    border: 1px solid red;
+}
+
+.ErrorMessage {
+    color: red;
+}

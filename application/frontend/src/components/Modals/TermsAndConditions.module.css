@@ -1,0 +1,9 @@
+.terms-and-conditions-container{
+    margin: 60px auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 90%;
+    height: 600px;
+    padding: 10px;
+    font-family: var(--ff-secondary);
+}

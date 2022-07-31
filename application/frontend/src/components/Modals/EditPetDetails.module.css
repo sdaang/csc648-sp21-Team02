@@ -1,0 +1,134 @@
+.edit-pet-details-header{
+    padding:15px 30px 30px 30px;
+    font-size: var(--h1);
+    font-weight: 600;
+    font-family: var(--ff-tertiary);
+}
+
+.edit-pet-details-container{
+    display: grid;
+    grid-template-areas: 'name  type'
+                        'color  age'
+                        'size   breed'
+                        'submit submit';
+    grid-template-rows: auto auto auto 100px;
+    justify-items: center;
+    overflow: hidden;
+    height: 70vh;
+    width: 60vw;
+    max-height: 700px;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+
+.edit-pet-details-name,
+.edit-pet-details-type,
+.edit-pet-details-breed,
+.edit-pet-details-color,
+.edit-pet-details-submit,
+.edit-pet-details-age,
+.edit-pet-details-size{
+    width: 250px;
+    margin: 30px;
+}
+
+/*.edit-pet-details-name{
+    display: block;
+    grid-area: name;
+    margin-left:30px;
+} */
+
+.edit-pet-details-name input{
+    display: block;
+    border: solid #ccc 1px;
+    border-radius: 5px;
+    width: 250px;
+    height: 38px;
+}
+
+.edit-pet-details-size{
+    grid-area: size;
+}
+
+.edit-pet-details-color{
+    grid-area: color;
+}
+
+.edit-pet-details-type{
+    grid-area: type;
+}
+
+.edit-pet-details-breed{
+    grid-area: breed;
+}
+
+.edit-pet-details-age{
+    grid-area: age;
+}
+
+
+.edit-pet-details-submit{
+    background-color: var(--primary-clr);
+    font-size: var(--h3);
+    line-height: 32px;
+    padding:0px;
+    color: white;
+    border: none;
+    border-radius: 7.5px;
+    box-shadow: var(--elevation-1);
+    cursor: pointer;
+    grid-area: submit;
+}
+
+@media only screen and (min-width: 414px) and (max-width: 1024px) {
+    .edit-pet-details-container {
+        grid-template-areas: 
+            'name'
+            'type'
+            'color'  
+            'age'
+            'size'   
+            'breed'
+            'submit';
+    }
+    .edit-pet-details-name,
+    .edit-pet-details-name input,
+    .edit-pet-details-type,
+    .edit-pet-details-breed,
+    .edit-pet-details-color,
+    .edit-pet-details-submit,
+    .edit-pet-details-age,
+    .edit-pet-details-size{
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .edit-pet-details-container {
+        grid-template-areas: 
+            'name'
+            'type'
+            'color'  
+            'age'
+            'size'   
+            'breed' 
+            'submit';
+    }
+    #name,
+    .edit-pet-details-name,
+    .edit-pet-details-name input,
+    .edit-pet-details-type,
+    .edit-pet-details-breed,
+    .edit-pet-details-color,
+    .edit-pet-details-age,
+    .edit-pet-details-size{
+        margin: 0px;
+        width: 150px;
+
+    }
+    .edit-pet-details-submit {
+        width: 150px;
+        height: 50px;
+    }
+}

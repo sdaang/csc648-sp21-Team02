@@ -1,0 +1,55 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  background-color: var(--reversed-txt-clr);
+  box-shadow: var(--elevation-10);
+  border-radius: 10px;
+  overflow: hidden;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 3;
+}
+
+.exit-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+  background: url("../../images/Created\ Icons/Exit-Cancel.svg") 50% no-repeat;
+  border: none;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+}
+
+.exit-button:hover {
+  opacity: 0.75;
+}
+
+@media only screen and (min-width: 414px) and (max-width: 1024px) {
+  .modal {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 95%;
+    height: 95%;
+  }
+}

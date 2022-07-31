@@ -1,0 +1,64 @@
+.edit-business-hours-header{
+    padding:15px 30px 30px 30px;
+    font-size: var(--h1);
+    font-weight: 600;
+    font-family: var(--ff-tertiary);
+}
+.edit-business-hours-container{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-areas: 'sun-start sun-end'
+                         'mon-start mon-end'
+                         'tue-start tue-end'
+                         'wed-start wed-end'
+                         'thu-start thu-end'
+                         'fri-start fri-end'
+                         'sat-start sat-end'
+                         'btn           btn';
+    gap: 10px;
+    width: 700px;
+    height: 700px;
+    
+}
+
+.edit-business-hours-submit{
+    grid-area: btn;
+    background-color: var(--primary-clr);
+    font-size: var(--h3);
+    line-height: 32px;
+    padding:0px;
+    color: white;
+    border: none;
+    border-radius: 7.5px;
+    box-shadow: var(--elevation-1);
+    cursor: pointer;
+    transition: .15s ease-in-out;
+}
+
+.edit-business-hours-submit:hover{
+    opacity: .75;
+}
+
+@media only screen and (max-width: 1024px) {
+    .edit-business-hours-container {
+        grid-template-areas: 
+            'sun-start' 
+            'sun-end'
+            'mon-start' 
+            'mon-end'
+            'tue-start' 
+            'tue-end'
+            'wed-start' 
+            'wed-end'
+            'thu-start' 
+            'thu-end'
+            'fri-start' 
+            'fri-end'
+            'sat-start' 
+            'sat-end'
+            'btn';
+        overflow-y: auto;
+        width: auto;
+    }
+}
